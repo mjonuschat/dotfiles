@@ -1,0 +1,36 @@
+# Python/Django files
+*.pot
+*.py[cod]
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Backups
+*.bak
+*~
+*.svn
+*.old
+
+# SASS Cache
+.sass-cache
+*.sassc
+
+# YARD artifacts
+.yardoc
+_yardoc
+
+# Ruby
+*.rbc
+
+# Patch
+**.orig
+**.rej
