@@ -22,7 +22,7 @@ export NODE_PATH=/usr/local/lib/node:$NODE_PATH
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler gem git git-flow github gpg-agent heroku knife node npm osx rails3 rake rbenv ruby vi-mode)
+plugins=(brew bundler gem git git-flow github heroku knife node npm osx rails3 rake rbenv ruby vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
