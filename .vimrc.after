@@ -1,0 +1,62 @@
+" Set some display options
+set background=light
+colorscheme solarized
+set guifont=Meslo\ LG\ S\ DZ:h12
+
+" Helper to save editor state
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
+" Remove trailing whitespace
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+" Reident the whole buffer
+nmap _= :call Preserve("normal gg=G")<CR>
+
+" Automaticall trim trailing whitespace on save for
+" Setup for: Python, Javascript, CoffeeScript, HTML, PHP, Ruby
+autocmd BufWritePre *.py,*.js,*.html,*.phtml,*.coffee,*.php,*.rb,*.conf,*.hbs,*.hjs :call Preserve("%s/\\s\\+$//e")
+
+" Automatically compile coffescript to javascript on save
+" autocmd BufWritePost *.coffee silent CoffeeMake! | cwindow | redraw!
+
+" Clear the search results highlighting
+nnoremap <leader><space> :let @/=""<CR>
+
+" Enable 256 color support, if available
+if $TERM=="xterm-256color"
+  set t_Co=256
+endif
+
+" Customize HTML indentation
+:let g:html_indent_script1 = "inc"
+:let g:html_indent_style1 = "inc"
+:let g:html_indent_inctags = "html,body,head,tbody,p,li"
+
+" Disable flash and beep
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
+if has('autocmd')
+  au FileType html set softtabstop=2 tabstop=2 shiftwidth=2 textwidth=0
+endif
+
+" Bind mustache syntax to common extensions
+" No idea why janus#is_plugin_enabled doesn't work here
+" but this works for now
+if !janus#is_plugin_disabled("handlebars") && has("autocmd")
+  au BufNewFile,BufRead *.hbs,*.hjs set filetype=handlebars
+end
+
+" Powerline - fancy statuslines
+let g:Powerline_symbols = 'fancy'

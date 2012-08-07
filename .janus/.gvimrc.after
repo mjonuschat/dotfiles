@@ -1,0 +1,4 @@
+" Set some display options
+set background=light
+colorscheme solarized
+set guifont=Meslo\ LG\ S\ DZ:h12

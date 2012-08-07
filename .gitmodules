@@ -1,0 +1,9 @@
+[submodule ".janus/indenthtml"]
+	path = .janus/indenthtml
+	url = https://github.com/vim-scripts/indenthtml.vim
+[submodule ".janus/powerline"]
+	path = .janus/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule ".janus/typoscript"]
+	path = .janus/typoscript
+	url = https://github.com/nebelschwade/typoscript-vim.git
