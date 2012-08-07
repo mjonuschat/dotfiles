@@ -1,0 +1,1 @@
+alias btar='COPY_EXTENDED_ATTRIBUTES_DISABLE=true COPYFILE_DISABLE=true tar --exclude="._*" --exclude=".svn" --exclude=".DS_Store" --exclude="*.bak" --exclude="*~" --exclude=".git" --exclude="*.old" --exclude="Thumbs.db" $*'
