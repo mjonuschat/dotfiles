@@ -1,13 +1,13 @@
 [user]
-	name = Morton Jonuschat
-	email = m.jonuschat@gute-botschafter.de
+  name = Morton Jonuschat
+  email = yabawock@gmail.com
 [color]
-	diff = auto
-	status = auto
+  diff = auto
+  status = auto
   branch = auto
   ui = true
 [core]
-	whitespace = trailing-space,space-before-tab
+  whitespace = trailing-space,space-before-tab
   excludesfile = ~/.gitignore-global
   editor = vim
 [apply]
@@ -15,7 +15,7 @@
 [advice]
   statusHints = false
 [branch]
-	autosetuprebase = remote
+  autosetuprebase = remote
 [alias]
   # log
   l = log --graph --date=short
@@ -33,7 +33,7 @@
   st = status                       # status
   stat = status                     # status
 [format]
-  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an <%ae>]%Creset
 [merge]
   summary = true
   verbosity = 1
@@ -56,3 +56,9 @@
 [url "git@bitbucket.org:gutebotschafter/"]
   # With write access
   insteadOf = gubo:
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -7,9 +7,6 @@
 [submodule ".janus/typoscript"]
 	path = .janus/typoscript
 	url = https://github.com/nebelschwade/typoscript-vim.git
-[submodule ".janus/vimux"]
-	path = .janus/vimux
-	url = git://github.com/benmills/vimux.git
 [submodule ".janus/turbux"]
 	path = .janus/turbux
-	url = git://github.com/jgdavey/vim-turbux.git
+	url = git://github.com/yabawock/vim-turbux.git

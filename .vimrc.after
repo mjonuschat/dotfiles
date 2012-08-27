@@ -60,3 +60,8 @@ end
 
 " Powerline - fancy statuslines
 let g:Powerline_symbols = 'fancy'
+
+" Turbux
+let g:turbux_send_background = 1
+let g:turbux_command_rspec = 'spin push '
+
