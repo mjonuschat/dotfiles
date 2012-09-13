@@ -10,3 +10,6 @@
 [submodule ".janus/turbux"]
 	path = .janus/turbux
 	url = git://github.com/yabawock/vim-turbux.git
+[submodule ".janus/switch"]
+	path = .janus/switch
+	url = git://github.com/AndrewRadev/switch.vim.git
