@@ -1,0 +1,18 @@
+# ~/.tmuxinator/mercurii.yml
+# you can make as many tabs as you wish...
+
+project_name: Rails
+project_root: .
+tabs:
+  - editor:
+      layout: ab11,364x76,0,0{250x76,0,0,113x76,251,0}
+      panes:
+        - vim .
+        - spin serve
+  - shell:
+      panes:
+        - #empty, will run shell
+  - server: foreman start -f Procfile.dev
+  - logs: tail -f log/development.log
+  - console: rails c
+  - database: rails db
