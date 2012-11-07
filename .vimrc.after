@@ -66,4 +66,4 @@ let g:turbux_send_background = 1
 let g:turbux_command_rspec = 'spin push '
 
 " Swith
-nnoremap - :Switch<cr>
+nnoremap \ :Switch<cr>
