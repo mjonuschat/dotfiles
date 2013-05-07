@@ -40,7 +40,7 @@ endif
 " Customize HTML indentation
 :let g:html_indent_script1 = "inc"
 :let g:html_indent_style1 = "inc"
-:let g:html_indent_inctags = "html,body,head,tbody,p,li"
+:let g:html_indent_inctags = "html,body,head,tbody,p,li,f:for,f:translate,f:if,f:form,f:form.hidden,f:form.submit,f:form.textbox,t:form.label,t:form.textbox,t:form.select,t:form,radio,t:form.checkbox"
 
 " Disable flash and beep
 set noerrorbells visualbell t_vb=
