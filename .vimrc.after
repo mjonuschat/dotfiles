@@ -1,7 +1,8 @@
 " Set some display options
 set background=light
 colorscheme solarized
-set guifont=Meslo\ LG\ S\ DZ:h12
+"set guifont=Meslo\ LG\ S\ DZ:h12
+set guifont=Source\ Code\ Pro:h13
 
 " Helper to save editor state
 function! Preserve(command)
