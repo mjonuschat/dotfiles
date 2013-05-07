@@ -37,3 +37,6 @@ if [ -s "$HOME/.rvm/scripts/rvm" ]; then
   source "$HOME/.rvm/scripts/rvm"
   PATH=$PATH:$HOME/.rvm/bin
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
