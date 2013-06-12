@@ -6,7 +6,7 @@ export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="agnoster"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -22,7 +22,7 @@ export NODE_PATH=/usr/local/lib/node:$NODE_PATH
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler gem git git-flow github heroku knife node npm osx rails3 rake rbenv ruby vi-mode)
+plugins=(brew bundler composer coffee gem git git-extras git-flow github heroku jruby knife laravel node npm osx rails3 rails4 rake rbenv rebar rsync ruby tmux tmuxinator vi-mode zeus)
 
 source $ZSH/oh-my-zsh.sh
 
