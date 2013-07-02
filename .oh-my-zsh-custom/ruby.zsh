@@ -1,3 +1,11 @@
+# Enable rbenv
+[[ -x /usr/local/bin/rbenv ]] && eval "$(rbenv init -)"
+
+# Enable rvm
+if [ -s "$HOME/.rvm/scripts/rvm" ]; then
+  source "$HOME/.rvm/scripts/rvm"
+fi
+
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
