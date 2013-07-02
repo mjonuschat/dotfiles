@@ -30,6 +30,7 @@ _yardoc
 
 # Ruby
 *.rbc
+.ruby-version
 
 # Patch
 **.orig
